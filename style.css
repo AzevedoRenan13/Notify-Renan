@@ -2,10 +2,18 @@ body{
     margin: 0;
     background-color: #2dcc70;
     display: grid;
-    grid-template-areas: "nav nav nav nav nav nav"
-                         "header header header header header header"
-    grid-template-rows: 
+    grid-template-areas: "nav nav nav nav "
+    "header header header header "
+    "section section section section"
+                         "div div div div"
+                         "aside aside aside aside"
+                         "footer footer footer footer";
+grid-template-rows: 40vh 10vh 40vh 10vh;                         
+
+
 }
+
+
 
 
 nav{
@@ -19,6 +27,31 @@ nav{
     align-items: center;
     padding: 0;
     grid-area: nav;
+}
+
+header{
+    background-color: rgb(255, 115, 0);
+    grid-area: header;
+}
+
+section{
+    grid-area: section;
+    background-color: blue;
+}
+
+div.area{
+    grid-area: div;
+    background-color: red
+}
+
+aside{
+    grid-area: aside;
+    background-color: magenta;
+}
+
+footer{
+    grid-area: footer;
+    background-color: aqua;
 }
 
 nav h1{
@@ -45,8 +78,3 @@ nav h1{
      justify-content: flex-end;
 
  }
-
-header{
-    background-color: white;
-    grid-area: header;
-}
