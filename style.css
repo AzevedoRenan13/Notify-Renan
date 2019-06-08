@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-color: #2dcc70;
+    display: grid;
+    grid-template-areas: "nav nav nav nav nav nav"
+                         "header header header header header header"
+    grid-template-rows: 
+}
+
+
+nav{
+    background-image: url(105-projeto-notify/img/banner.png);
+    height: 78vh;
+    width: 100%;
+    background-size: cover;
+    border-top: #2ecd71 8.5px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    grid-area: nav;
+}
+
+nav h1{
+    color: whitesmoke;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+ 
+ }
+ 
+ nav span{
+     color: #2ecd71;
+     font-family: 'Pacifico', cursive;
+ }
+ 
+ nav p{
+     color: #fffffb;
+     font-family: 'Oswald', sans-serif;
+
+ }
+ 
+ #maozinha{
+     height: 100%;
+     display: flex;
+     justify-content: flex-end;
+
+ }
+
+header{
+    background-color: white;
+    grid-area: header;
+}
